@@ -1,8 +1,6 @@
 import util
-import itertools
 
 seats_file = 'input_files/day_5.txt'
-test_string = 'FBFBBFFRLR'
 
 
 def parse_seat_ids():
