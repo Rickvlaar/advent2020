@@ -14,10 +14,8 @@ def find_weakness(preamble=25):
 
 def determine_weakness(weak_num):
     combination_size = 2
-    index = 0
     while True:
         for index, value in enumerate(number_list, combination_size):
-            # print(number_list[index: index + combination_size])
             if sum(number_list[index - combination_size:index]) == weak_num:
                 return min(number_list[index - combination_size:index]) + max(number_list[index - combination_size:index])
             index += 1
