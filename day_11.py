@@ -4,18 +4,6 @@ import numpy
 seat_file = 'input_files/day_11.txt'
 seat_list = util.parse_file_as_list(seat_file)
 
-test_file = [
-'L.LL.LL.LL',
-'LLLLLLL.LL',
-'L.L.L..L..',
-'LLLL.LL.LL',
-'L.LL.LL.LL',
-'L.LLLLL.LL',
-'..L.L.....',
-'LLLLLLLLLL',
-'L.LLLLLL.L',
-'L.LLLLL.LL']
-
 
 def seat_the_people(seat_list=seat_list, max_occupied=5, distance=int(10e12)):
     seat_map = {(x, y): char for y, line in enumerate(seat_list) for x, char in enumerate(line)}
@@ -65,5 +53,3 @@ def list_checker(min_value, list_to_check, coords_to_check, distance=int(10e12),
             coords_to_check.append(char)
             break
     return coords_to_check
-
-
