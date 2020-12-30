@@ -80,7 +80,7 @@ def build_rules(start_rule_no='0', part_2=False):
     root.end_nodes.clear()
     root.traverse_tree()
     allcombos = set()
-    print(len(root.end_nodes))
+
     for node in root.end_nodes:
         allcombos.add(''.join(node.str_list))
     allcombos.intersection_update(values_set)
